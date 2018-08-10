@@ -1,0 +1,72 @@
+//leaflet 样式修改
+.leaflet-div-icon {
+  width: auto !important;
+  height: auto !important;
+  border-width: 0 !important;
+  background-color: transparent !important;
+}
+
+//popup
+.leaflet-popup-content-wrapper {
+  //border-radius: 0!important;
+  padding: 0 !important;
+}
+
+.leaflet-popup-content {
+  margin: 0 !important;
+  background-color: transparent !important;
+}
+
+//popup-up-close-button
+.leaflet-container a.leaflet-popup-close-button {
+  color: white !important;
+  font-size: 18px !important;
+  top: 10px !important;
+  right: 6px !important;
+  padding: 0 !important;
+  font-weight: normal !important;
+}
+
+.custom-river-leaflet-tool-tip-bgc {
+  background-color: transparent !important;
+  color: #43a4f2 !important;
+  border: none !important;
+  box-shadow: none !important;
+  font-size: 12px;
+  font-weight: bold;
+  font-family: "Microsoft YaHei";
+}
+
+.riverInfoDialog {
+  margin-left: -350px;
+}
+
+.leaflet-tooltip-bottom:before {
+  display: none !important;
+}
+
+//聚合点样式
+.marker-cluster-small {
+  background-color: transparent !important;
+  div {
+    background-color: #45aeff !important;
+    color: white;
+  }
+}
+
+.marker-cluster-medium {
+  background-color: transparent !important;
+  div {
+    background-color: #45aeff !important;
+    color: white;
+  }
+}
+
+.marker-cluster-large {
+  background-color: transparent !important;
+  div {
+    background-color: #45aeff !important;
+    color: white;
+  }
+}
+

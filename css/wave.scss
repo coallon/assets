@@ -1,0 +1,90 @@
+.wave-container {
+  position: relative;
+  width: 80px !important;
+  height: 80px !important;
+  left: -29px;
+  top: -12px;
+  background-color: transparent;
+  border-radius: 50%;
+  overflow: hidden;
+  .wave-animate-stop {
+    animation-name: none;
+  }
+  .wave-animate-start {
+    animation-name: wave;
+  }
+  .wave-animate {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-top: -15px;
+    margin-left: -15px;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-delay: 0s;
+    transform: scale(1);
+    opacity: 1;
+    z-index: 1;
+  }
+  .wave-animate-fast {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-top: -15px;
+    margin-left: -15px;
+    animation-name: wave;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-delay: 0s;
+    transform: scale(1);
+    opacity: 1;
+    z-index: 1;
+  }
+  .wave-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    //box-shadow: 0 0 20px 0 #c6d1d7;
+    padding: 3px;
+    text-align: center;
+    font-size: 12px;
+    line-height: 15px;
+    color: white;
+    //background: white;
+    margin-top: -15px;
+    margin-left: -15px;
+    border-radius: 50%;
+    z-index: 2;
+    img {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+    }
+    .wave-icon-container {
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+    }
+  }
+}
+
+@keyframes wave {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(3);
+    opacity: 0;
+  }
+}

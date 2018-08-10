@@ -1,0 +1,102 @@
+#map {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+#map-layer-control-container {
+  position: absolute;
+  left: 35px;
+  bottom: 180px;
+  z-index: 3;
+  box-shadow: 0 0 20px 0 #c6d1d7;
+}
+
+#map-legend-container {
+  position: absolute;
+  box-shadow: 0 0 20px 0 #c6d1d7;
+  bottom: 35px;
+  left: 35px;
+  z-index: 3;
+}
+
+#map-search-container {
+  position: absolute;
+  top: 25px;
+  left: 35px;
+  z-index: 3;
+  box-shadow: 0 0 20px 0 #c6d1d7;
+}
+
+#map-tab-container {
+  position: absolute;
+  top: 25px;
+  left: 360px;
+  z-index: 3;
+  box-shadow: 0 0 20px 0 #c6d1d7;
+}
+
+#map-float-container {
+  position: absolute;
+  right: 10px;
+  top: 85px;
+  z-index: 3;
+  .map-float-button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 76px;
+    text-align: center;
+    border-radius: 5px;
+    padding: 20px 0;
+    font-size: 14px;
+    color: white;
+    cursor: pointer;
+    z-index: 3;
+  }
+  .map-float-button-close {
+    background-color: #45aeff;
+    box-shadow: 0 0 20px 0 #c6d1d7;
+  }
+  .cartogram-zoom-enter-active {
+    animation: cartogram-in 0.5s;
+    transform-origin: 100% 0%;
+  }
+
+  .cartogram-zoom-leave-active {
+    animation: cartogram-leave 0.5s;
+    transform-origin: 100% 0%;
+  }
+  @keyframes cartogram-in {
+    0% {
+      transform: scale(0);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  @keyframes cartogram-leave {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(0);
+    }
+  }
+  .map-float-content {
+    width: 340px;
+    box-shadow: 0 0 20px 0 #c6d1d7;
+    border-radius: 5px;
+    padding: 20px 10px;
+    background: white;
+  }
+}
+
+.map-icon-point {
+  position: relative;
+  left: -7px !important;
+}
